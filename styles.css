@@ -1,0 +1,26 @@
+a {
+    color: skyblue;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+li {
+    font-size: 1.4em;
+}
+
+body {
+    background-color: #30323b;
+    color: white;
+    -webkit-text-stroke-width: 0.01em;
+    -webkit-text-stroke-color: black;
+}
