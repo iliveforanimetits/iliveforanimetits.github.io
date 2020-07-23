@@ -35,7 +35,7 @@ def format_HTML(lst):
             if tag == '^':
                 return_string += f'\t<h2>{name}</h2>\n'
 
-            elif link == 'NONE':
+            elif link == 'none':
                 return_string += f'\t<li>{name}</li>\n'
 
             else:
@@ -76,7 +76,7 @@ def main():
 
     html = ''.join(template)
 
-    with open('test.html', 'w') as f:
+    with open('index.html', 'w') as f:
         f.write(html)
 
 main()
