@@ -4,6 +4,79 @@
     <link rel="stylesheet" href="styles.css">
     <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
     <body onload="displayStats()">
+        <script>
+            function displayStats() {
+                var links = document.links;
+
+                var films = [];
+                var texts = [];
+                var animes = [];
+
+                for(var i=0; i<links.length; i++) {
+                    if (links[i].id == "video") {
+                        films.push(links[i]);
+                    }
+                    else if (links[i].id == "text") {
+                        texts.push(links[i]);
+                    }
+                    else if (links[i].id == "animation") {
+                        animes.push(links[i]);
+                    }
+                }
+                console.log("P0rn: " + films.length);
+                console.log("H3ntai: " + animes.length);
+                console.log("Doujin: " + texts.length);
+
+                var total = films.length + animes.length + texts.length;
+
+                document.getElementById("count").innerHTML = total + " links and counting"
+            }
+
+            function randomFilm() {
+                var links = document.links;
+                var films = [];
+
+                for(var i=0; i<links.length; i++) {
+                    if (links[i].id == "video") {
+                        films.push(links[i]);
+                    }
+                }
+
+                var random = films[Math.floor(Math.random()*films.length)];
+
+                window.open(random);
+            }
+
+            function randomText() {
+                var links = document.links;
+                var texts = [];
+
+                for(var i=0; i<links.length; i++) {
+                    if (links[i].id == "text") {
+                        texts.push(links[i]);
+                    }
+                }
+
+                var random = texts[Math.floor(Math.random()*texts.length)];
+
+                window.open(random);
+            }
+
+            function randomAnimation() {
+                var links = document.links;
+                var animes = [];
+
+                for(var i=0; i<links.length; i++) {
+                    if (links[i].id == "animation") {
+                        animes.push(links[i]);
+                    }
+                }
+
+                var random = animes[Math.floor(Math.random()*animes.length)];
+
+                window.open(random);
+            }
+        </script>
         <h1 align="center">
             Research
         </h1>
@@ -87,9 +160,6 @@
                     <a href="https://pornditt.com/videos/13769/webyoung-kendra-spade-eliza-ibarra-and-vanna-bardot-class-of-the-titans/" target="_blank" id="video">
                     Detention</a>
             </ul>
-            <li>
-                <a href="https://www.tube8.com/step+fantasy/alex-tanner-is-blackmailed-by-her-brother/38564601/" target="_blank" id="video">Alex Tanner</a>
-            </li>
 
             <li>
                 Vina Sky
@@ -464,10 +534,6 @@
                 SOS</a>
             </li>
             <li>
-                <a href="https://hanime.tv/videos/hentai/energy-kyouka-2" target="_blank" id="animation">
-                Energy Kyouka!!</a>
-            </li>
-            <li>
                 <a href="https://hanime.tv/videos/hentai/joshi-luck-1" target="_blank" id="animation">
                 Joshi Luck</a>
             </li>
@@ -478,10 +544,6 @@
             <li>
                 <a href="https://hanime.tv/videos/hentai/kateikyoushi-no-onee-san-1-ep-1" target="_blank" id="animation">
                 Kateikyoushi no Onee-san</a>
-            </li>
-            <li>
-                <a href="https://hanime.tv/videos/hentai/fechikano" target="_blank" id="animation">
-                Fechikano!</a>
             </li>
             <li>
                 <a href="https://hanime.tv/videos/hentai/fukubiki-triangle-miharu-after-1?cache_bust=1587623264666" target="_blank" id="animation">
@@ -592,12 +654,25 @@
                 Boy Meets Harem</a>
             </li>
             <li>
-                <a href="https://hanime.tv/videos/hentai/sei-brunehilde-gakuen-shoujo-kishidan-to-junpaku-no-panty" target="_blank" id="animation">
-                Brunehilde</a>
-            </li>
-            <li>
                 <a href="https://hanime.tv/videos/hentai/mama-puri-1" target="_blank" id="animation">
                 Mama Puri</a>
+            </li>
+        </ul>
+        <h2>
+            Ani-meh
+        </h2>
+        <ul>
+            <li>
+                <a href="https://hanime.tv/videos/hentai/energy-kyouka-2" target="_blank" id="animation">
+                Energy Kyouka!!</a>
+            </li>
+            <li>
+                <a href="https://hanime.tv/videos/hentai/fechikano" target="_blank" id="animation">
+                Fechikano!</a>
+            </li>
+            <li>
+                <a href="https://hanime.tv/videos/hentai/sei-brunehilde-gakuen-shoujo-kishidan-to-junpaku-no-panty" target="_blank" id="animation">
+                Brunehilde</a>
             </li>
         </ul>
         <h2>
@@ -833,7 +908,7 @@
                         <a href="https://nhentai.net/g/296161/" target="_blank" id="text">
                         Chapter 4</a>
                     </li>
-            </ul>
+                </ul>
             </ul>
             <li>
                 <a href="https://nhentai.net/artist/wakamatsu/" target="_blank" id="text">
@@ -910,7 +985,7 @@
                     Natsu to Jun</a>
                 </li>
                 <li>
-                    <a href="https://imgur.com/a/pps1umt" target="_blank" id="text">
+                    <a href="https://nhentai.net/g/294505/" target="_blank" id="text">
                     Kinenbi</a>
                 </li>
             </ul>
@@ -1163,30 +1238,6 @@
                     Lo-Fi Cycle</a>
                 </li>
             </ul>
-        <h2>
-            Idol
-        </h2>
-        <ul>
-            <li>Minami</li>
-            <ul>
-                <li>
-                    <a href="https://imgur.com/a/NwvSoak" target="_blank" id="text">
-                    Onsen</a>
-                </li>
-                <li>
-                    <a href="https://imgur.com/a/w1tDQrV" target="_blank" id="text">
-                    Mizugi</a>
-                </li>
-            </ul>
-            <li>
-                <a href="https://nhentai.net/g/296010/" target="_blank" id="text">
-                Celebrity</a>
-            </li>
-            <li>
-                <a href="https://nhentai.net/g/293053/" target="_blank" id="text">
-                IDOLM@STER</a>
-            </li>
-        </ul>
         <h2>
             Married
         </h2>
@@ -1645,9 +1696,7 @@
         </h2>
         <ul>
             <li>
-                <h3>
-                    Gotoubun no Hanayome
-                </h3>
+                <h3>Gotoubun no Hanayome</h3>
             </li>
             <ul>
                 <li>
@@ -1659,10 +1708,38 @@
                     Hanayome no Kakuritsu</a>
                 </li>
                 <li>
-                    <a href="https://imgur.com/a/i483WVL" target="_blank" id="text">
+                    <a href="https://nhentai.net/g/298547/" target="_blank" id="text">
                     Nino</a>
             </ul>
             </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>
+                    Idol
+                </h3>
+            </li>
+            <ul>
+                <li>Nitta Minami</li>
+                <ul>
+                    <li>
+                        <a href="https://imgur.com/a/NwvSoak" target="_blank" id="text">
+                        Onsen</a>
+                    </li>
+                    <li>
+                        <a href="https://imgur.com/a/w1tDQrV" target="_blank" id="text">
+                        Mizugi</a>
+                    </li>
+                    <li>
+                        <a href="https://nhentai.net/g/293053/" target="_blank" id="text">
+                        Nitta-san</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="https://nhentai.net/g/296010/" target="_blank" id="text">
+                    My Sweet Celebrity</a>
+                </li>
+            </ul>
         </ul>
         <ul>
             <li>
@@ -2427,79 +2504,5 @@
                     Summertime Saga</a>
             </li>
         </ul>
-
-        <script>
-            function displayStats() {
-                var links = document.links;
-
-                var films = [];
-                var texts = [];
-                var animes = [];
-
-                for(var i=0; i<links.length; i++) {
-                    if (links[i].id == "video") {
-                        films.push(links[i]);
-                    }
-                    else if (links[i].id == "text") {
-                        texts.push(links[i]);
-                    }
-                    else if (links[i].id == "animation") {
-                        animes.push(links[i]);
-                    }
-                }
-                console.log("P0rn: " + films.length);
-                console.log("H3ntai: " + animes.length);
-                console.log("Doujin: " + texts.length);
-
-                var total = films.length + animes.length + texts.length;
-
-                document.getElementById("count").innerHTML = total + " links and counting"
-            }
-
-            function randomFilm() {
-                var links = document.links;
-                var films = [];
-
-                for(var i=0; i<links.length; i++) {
-                    if (links[i].id == "video") {
-                        films.push(links[i]);
-                    }
-                }
-
-                var random = films[Math.floor(Math.random()*films.length)];
-
-                window.open(random);
-            }
-
-            function randomText() {
-                var links = document.links;
-                var texts = [];
-
-                for(var i=0; i<links.length; i++) {
-                    if (links[i].id == "text") {
-                        texts.push(links[i]);
-                    }
-                }
-
-                var random = texts[Math.floor(Math.random()*texts.length)];
-
-                window.open(random);
-            }
-
-            function randomAnimation() {
-                var links = document.links;
-                var animes = [];
-
-                for(var i=0; i<links.length; i++) {
-                    if (links[i].id == "animation") {
-                        animes.push(links[i]);
-                    }
-                }
-
-                var random = animes[Math.floor(Math.random()*animes.length)];
-
-                window.open(random);
-            }
-        </script>
     </body>
 </html>
