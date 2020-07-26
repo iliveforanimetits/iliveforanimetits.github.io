@@ -44,6 +44,7 @@
 
                 var random = films[Math.floor(Math.random()*films.length)];
 
+                console.log(random)
                 window.open(random);
             }
 
@@ -59,6 +60,7 @@
 
                 var random = texts[Math.floor(Math.random()*texts.length)];
 
+                console.log(random)
                 window.open(random);
             }
 
@@ -74,6 +76,7 @@
 
                 var random = animes[Math.floor(Math.random()*animes.length)];
 
+                console.log(random)
                 window.open(random);
             }
         </script>
