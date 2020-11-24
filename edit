@@ -1,3 +1,0 @@
-#!/bin/bash
-
-vim research.txt && python3 generate.py
